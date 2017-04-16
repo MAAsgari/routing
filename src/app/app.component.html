@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-10">
+      <h1>Hello World!</h1>
+      <hr>
+      <!--queryParams is additional property for routerLink-->
+      <a routerLink="" [queryParams]="{page:600}" routerLinkActive="active" >Home</a> |
+      <input type="text" #id (input)="0">
+      <!--<a [routerLink]="['user',id.value]" routerLinkActive="active">User</a>-->
+      <a [routerLink]="['user',id.value]" routerLinkActive="active">User</a>
+      <hr>
+      <!--<hr>
+            <a [routerLink]="['']" [queryParams]="{analytics: 500}">Home</a> |
+            <input type="text" #id (input)="0">
+            <a [routerLink]="['user', id.value]" routerLinkActive="active">User</a>
+            <hr>-->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
